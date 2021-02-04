@@ -28,7 +28,7 @@ void _quick(int *array, int lo, int hi, size_t size)
 	{
 		p = particion(array, lo, hi, size);
 		_quick(array, lo, p - 1, size);
-		_quick(array, p + 1, hi - 1, size);
+		_quick(array, p + 1, hi, size);
 	}
 }
 

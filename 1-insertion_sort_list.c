@@ -6,9 +6,12 @@
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *current = *list;
+	listint_t *current;
 	listint_t *temp;
 
+	while (!*list || !(*list)->next)
+		return;
+	current = *list;
 	while (current)
 	{
 		temp = current->prev;
